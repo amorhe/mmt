@@ -1,0 +1,122 @@
+/* pages/views/dynamic/index.wxss */
+.userziliao {
+  position: absolute;
+  top: 280rpx;
+  right: 28rpx;
+  display: flex;
+  align-items: center;
+  color: #fff
+}
+.userziliao>view {
+  width: 137rpx;
+  height: 137rpx;
+  border-radius: 50%;
+  background: #fff
+}
+.userziliao image {
+  width: 96%;
+  height: 96%;
+  margin: 2%;
+  border-radius: 50%;
+}
+.userziliao>text {
+  margin-right: 24rpx;
+  margin-top: -24rpx;
+}
+.marginB {
+  margin-bottom: 50rpx;
+}
+.dynamic_list {
+  padding: 50rpx 24rpx;
+  border-bottom: 1rpx #eeeeee solid ;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start
+}
+
+.dynamic_list:nth-last-child(1) {
+  border-bottom: none
+}
+.avavtar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.dynamic_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1
+}
+.dynamic_box_top {
+  display: flex;
+  align-items:center; 
+}
+.username {
+  color: #29487b;
+  font-size: 34rpx;
+  margin-right: 20rpx;
+}
+.time {
+  color: #888
+}
+.image_box {
+  margin: 30rpx 0;
+  display: flex;
+  width: 600rpx;
+  flex-wrap: wrap
+}
+.image_box>image {
+  width: 185rpx;
+  height: 185rpx;
+  margin: 0 8rpx 8rpx 0;
+}
+.dynamic_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600rpx;
+  color: #666
+}
+.dynamic_bottom_box {
+  display: flex;
+  width: 188rpx;
+  justify-content: space-between;
+  color: #666
+}
+.dynamic_bottom_box image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+.colorSpecial {
+  color: #45bf23
+}
+.discuss_box {
+  width: 506rpx;
+  padding: 20rpx;
+  background: #f9f9f9;
+  margin-top: 30rpx;
+  color: #666
+}
+.discuss_box>view {
+  line-height: 40rpx;
+}
+.disName {
+  color: #29487b
+}
+.dynamic_text {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  margin: 20rpx 0;
+  font-size: 28rpx;
+  line-height: 42rpx;
+}
+.dynamic_action {
+  display: flex;
+  align-items: center;
+  color: #7d7d7d
+}

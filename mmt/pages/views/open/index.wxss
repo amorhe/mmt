@@ -1,0 +1,13 @@
+/* pages/views/open/index.wxss */
+.view_content>image {
+  width: 100%;
+}
+.view_content>view {
+  position: absolute;
+  left: 230rpx;
+  bottom: -1080rpx;
+}
+.view_content>view image {
+  width: 290rpx;
+  height: 90rpx;
+}

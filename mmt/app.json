@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/views/dynamic/index",
+    "pages/views/index/index",
+  
+    "pages/views/productDetail/index",
+    "pages/views/empty/index",
+    "pages/views/paySuccess/index",
+    "pages/views/open/index",
+    "pages/views/callWe/index",
+    "pages/views/product/index",
+    "pages/views/companyInfo/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "苗木通",
+    "navigationBarTextStyle": "black"
+  }
+}

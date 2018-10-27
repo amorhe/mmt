@@ -1,0 +1,111 @@
+<!--index.wxml-->
+<view class="container">
+<!-- 轮播 -->
+  <view class='swipe_box'>
+    <swiper class='swiper_div' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="#fff" indicator-active-color="#36c849" circular>
+    <block wx:for="{{imgUrls}}" wx:key='unquie'>
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  </view>
+
+  <!-- 首页上面列表 -->
+  <view class='index_menu border_weight'>
+    <view wx:for="{{menuList}}" wx:key='unquie'>
+      <image src='{{item.url}}'></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+
+<!-- 公司简介 -->
+  <navigator class='border_weight' hover-class="navigator-hover" url='/pages/views/companyInfo/index'>
+    <view class='company_info_up'>
+      <view class='line_green'></view>
+      <view class='company_info_title'>公司简介</view>
+    </view>
+    <view class='company_info_content'>
+      本基地建于2009年，现扩展到1000多亩，长期供应各种规格香樟，桂花，栾树，香泡，红叶石楠，朴树，红果
+      冬青等苗木，欢迎新老客户前来考察订购。欢迎欢迎热烈欢迎。
+    </view>
+    <view class='company_img'>
+      <image wx:for='{{companyImg}}' src='{{item}}' wx:key='unquie'></image>
+    </view>
+  </navigator>
+
+  <!-- 产品展示 -->
+  <navigator class='border_weight' hover-class="navigator-hover" url='/pages/views/product/index'>
+   <view class='company_info_up product_top'>
+      <view>
+        <view class='line_green'></view>
+        <view class='company_info_title'>产品展示</view>
+      </view>
+      <view class='seeMore'>查看更多</view>
+    </view>
+    <view class='product_list'>
+      <view wx:for='{{productList}}' wx:key='unquie'>
+        <image src='{{item.src}}'></image>
+        <view class='product_name'>{{item.name}}</view>
+      </view>
+    </view>
+  </navigator>
+
+  <!-- 最近动态 -->
+  <navigator hover-class="navigator-hover" url='/pages/views/dynamic/index'>
+   <view class='company_info_up product_top'>
+      <view>
+        <view class='line_green'></view>
+        <view class='company_info_title'>最近动态</view>
+      </view>
+      <view class='seeMore'>查看更多</view>
+   </view>
+  </navigator> 
+  <!-- 动态列表 -->
+  <view class='border_weight'>
+  <view wx:for='{{dynamicArr}}' wx:key='unquie' wx:for-item='items'>
+  <view class='dynamic_up'>
+    <view class='dynamic_year'>{{items.year}}</view>
+    <view class='sanjiao'></view>
+  </view>
+  <view class='dynamic_content' wx:for='{{items.content}}' wx:key='unquie'>
+    <view class='dynamic_li'>
+      <view class='dynamic_time'>
+        <text class='dy_up' wx:if='{{item.sort}}'>{{item.sort}}</text>
+        <text>{{item.time}}</text>
+      </view>
+      <view class='dynamic_li_box'>
+        <view class='dy_left' wx:if='{{item.url}}'>
+          <image src='{{item.url}}'></image>
+        </view>
+        <view class="{{!item.url?'bgGary':''}}">{{item.text}}</view>
+      </view>
+    </view>
+  </view>
+  </view>
+  </view>
+  <!-- 联系我们 -->
+  <navigator hover-class="navigator-hover" url='/pages/views/callWe/index'>
+   <view class='company_info_up product_top'>
+      <view>
+        <view class='line_green'></view>
+        <view class='company_info_title'>联系我们</view>
+      </view>
+      <view></view>
+    </view>
+
+    <view class='map'>
+      <map latitude='30.311385' longitude='120.100437' scale='16' subkey='JHVBZ-HV6K6-CE4S5-MON42-MCKPJ-UMBC5' markers='{{markers}}'></map>
+    </view>
+    <view class='company_name'>公司名称：湖南好栗苗木通阿里商贸有限公司</view>
+    <view class='company_detail'>
+      <view>公司地址：湖南省长沙市雨花区迎新路686号7栋401</view>
+      <view>担任职位：董事长大人</view>
+      <view>微信号码：小小</view>
+      <view>QQ号码：18820255000</view>
+      <view>常用邮箱：18820255000</view>
+      <view>联系电话：<text class='tel'>18820255000</text></view>
+    </view>
+  </navigator>
+  <foot></foot>
+</view>

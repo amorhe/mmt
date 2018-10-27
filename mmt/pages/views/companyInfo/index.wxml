@@ -1,0 +1,27 @@
+<!--pages/views/companyInfo/index.wxml-->
+<view class='container'>
+  <swiper class='company_top' indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key='unquie'>
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+  <view>
+    <view class='company_info_up'>
+      <view class='line_green'></view>
+      <view class='company_info_title'>湖南好苗多苗木有限公司</view>
+    </view>
+
+    <view class='company_info_text'>
+        本基地建于2009年，现扩展到1000多亩，长期供应各种规格香樟，桂花，栾树，香泡，红叶石楠，朴树，红果冬青等苗木,
+        欢迎新老客户前来考察订购。欢迎欢迎热烈欢迎。
+    </view>
+  </view>
+  <view class='company_list'>
+      <image wx:for='{{imgList}}' src='{{item}}' wx:key='unquie'></image>
+  </view>
+  <foot></foot>
+</view>

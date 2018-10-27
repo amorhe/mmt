@@ -1,0 +1,113 @@
+<!--pages/views/productDetail/index.wxml-->
+<view class='container'>
+  <view class='product_top'>
+    <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1548233704,2751540543&fm=26&gp=0.jpg'></image>
+  </view>
+  <view class='product_box'>
+    <view class='product_box_up'>
+      <view class='product_box_left'>
+        <view class='line_green'></view>
+        <view class='product_box_name'>梧桐</view>
+        <view class='product_box_address'>【湖南省长沙市雨花区】</view>
+      </view>
+      <view class='product_box_right'>聊一聊</view>
+    </view>
+
+    <view class='product_box_down'>
+      <view>
+        <view class='pay_much'>1800.00</view>
+        <view>元/株</view>
+      </view>
+      <button class='pay_btn' bindtap='payBtn'>立即购买</button>
+    </view>
+  </view>
+  <view class='product_message'>
+    <image src='/images/messageIcon.png'></image>
+    <text>欢迎大家来到我的苗店小程序，小程序传播广，线上交易更安全！</text>
+  </view>
+
+<!-- 认证列 -->
+  <view class='product_mid_view'>
+    <image class='product_mid_avatar' src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1890296876,4097421974&fm=26&gp=0.jpg'></image>
+    <view class='product_mid_content'>
+      <view class='product_mid_content_up'>
+        <view>刘智</view>
+        <image src='/images/next.png'></image>
+      </view>
+      <view class='product_mid_content_down'>
+        <view>
+          <image src='/images/icon1.png'></image>
+          <text class='icon_title color1'>企业认证</text>
+        </view>
+        <view>
+          <image src='/images/icon2.png'></image>
+          <text class='icon_title color2'>担保认证</text>
+        </view>
+        <view>
+          <image src='/images/icon4.png'></image>
+          <text class='icon_title color3'>实力认证</text>
+        </view>
+        <view>
+          <image src='/images/icon5.png'></image>
+          <text class='icon_title color4'>服务认证</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+<!-- 信息详情 -->
+<view class='messgeDetail'>
+   <view class='company_info_up'>
+      <view class='line_green'></view>
+      <view class='company_info_title'>信息详情</view>
+    </view>
+    <view class='messageUl'>
+      <view>
+        <view>米径</view>
+        <view>10公分</view>
+        <view>高度</view>
+        <view>10公分</view>
+      </view>
+      <view>
+        <view>冠幅</view>
+        <view>10公分</view>
+        <view>种植状态</view>
+        <view>10公分</view>
+      </view>
+    </view>
+    <view class='message_text'>
+      【本人从事苗木交易5年，联系我时请说在苗木通上看到的】金九银十很多果苗已经涨价啦，各位老板欢迎进店选购金九银十很多果苗已经涨价啦，各位老板欢迎进店选购金九银十很多果苗已经涨价啦，各位老板欢迎进店选购。
+    </view>
+    <view class='product_imageList'>
+      <image src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2816127142,4068883954&fm=26&gp=0.jpg'></image>
+      <image src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1003688824,2838534882&fm=26&gp=0.jpg'></image>
+    </view>
+</view>
+<!-- 更多供应 -->
+    <view class='company_info_up borderNone'>
+      <view class='line_green'></view>
+      <view class='company_info_title'>更多供应</view>
+    </view>
+    <view class='product_bottom'>
+      <view wx:for='{{imageUrl}}' wx:key='unqie'>
+        <image src='{{item}}'></image>
+        <view class='product_bottom_box'>
+          <view class='product_bottom_box_name'>10公分红茶苗</view>
+          <view>
+            <text class='product_price'>18.00</text>
+            <text>元/株</text>
+          </view>
+          <view class='product_bottom_down'>
+            <button class='pay_btn' bindtap='payBtn'>立即购买</button>
+            <text>聊一聊</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <foot></foot>
+    <alertView id='alertView'
+               content='您还不是苗木通用户，暂时不能购买产品！'
+               bind:cancelEvent='cancelEvent'
+               bind:confirmEvent='confirmEvent'></alertView>
+</view>

@@ -1,0 +1,86 @@
+<!--index.wxml-->
+<view class="container">
+<!-- 轮播 -->
+  <view class='swipe_box'>
+    <swiper class='swiper_div' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="#fff" indicator-active-color="#36c849" circular>
+    <block wx:for="{{imgUrls}}" wx:key='unquie'>
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  </view>
+
+  <!-- 首页上面列表 -->
+  <view class='index_menu border_weight'>
+    <view wx:for="{{menuList}}" wx:key='unquie'>
+      <image src='{{item.url}}'></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+
+<!-- 公司简介 -->
+  <view class='border_weight'>
+    <view class='company_info_up'>
+      <view class='line_green'></view>
+      <view class='company_info_title'>公司简介</view>
+    </view>
+    <view class='empty_div'>
+       <image mode='widthFix' src='/images/empty1.png'></image> 
+       <!-- <view>该用户暂未编辑公司简介</view> -->
+       <view>还没有展现您的实力哟！前往APP进行编辑吧！</view>
+    </view>
+  </view>
+
+  <!-- 产品展示 -->
+  <view class='border_weight'>
+   <view class='company_info_up product_top'>
+      <view>
+        <view class='line_green'></view>
+        <view class='company_info_title'>产品展示</view>
+      </view>
+      <view class='seeMore'></view>
+    </view>
+    <view class='empty_div'>
+       <image mode='widthFix' src='/images/empty2.png'></image> 
+       <!-- <view>该用户暂未发布供应信息</view> -->
+       <view>暂未发布供应信息，前往App发布供应吧！</view>
+    </view>
+  </view>
+
+  <!-- 最近动态 -->
+  <view>
+   <view class='company_info_up product_top'>
+      <view>
+        <view class='line_green'></view>
+        <view class='company_info_title'>最近动态</view>
+      </view>
+      <view class='seeMore'>查看更多</view>
+   </view>
+  </view> 
+
+  <view class='empty_div border_weight'>
+      <image mode='widthFix' src='/images/empty3.png'></image> 
+      <!-- <view>该用户暂无动态信息</view> -->
+      <view>暂无动态信息，前往App编辑发布吧！</view>
+  </view>
+  <!-- 联系我们 -->
+  <view>
+   <view class='company_info_up product_top'>
+      <view>
+        <view class='line_green'></view>
+        <view class='company_info_title'>联系我们</view>
+      </view>
+      <view></view>
+    </view>
+
+   <view class='empty_div border_weight'>
+      <image mode='widthFix' src='/images/empty3.png'></image> 
+      <!-- <view>该用户暂无联系方式</view> -->
+      <view>暂无内容，前往App“我的”进行填写吧！</view>
+  </view>
+  </view>
+  <view class='openFill'>
+    <foot></foot>
+  </view>
+</view>

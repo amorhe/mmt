@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "产品展示",
+  "usingComponents": {
+    "foot": "../../public/foot/index"
+  }
+}

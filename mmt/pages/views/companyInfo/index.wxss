@@ -1,0 +1,27 @@
+/* pages/views/companyInfo/index.wxss */
+.company_top {
+  height: 363rpx;
+  width: 100%;
+}
+.slide-image {
+  width: 100%;
+  height: 100%
+}
+.company_info_text {
+  font-size: 28rpx;
+  color: #888;
+  line-height: 45rpx;
+  text-indent: 56rpx;
+  padding: 30rpx 50rpx 0;
+}
+.company_list {
+  margin: 0 50rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.company_list>image {
+  width: 310rpx;
+  height: 314rpx;
+  margin-top: 30rpx;
+}

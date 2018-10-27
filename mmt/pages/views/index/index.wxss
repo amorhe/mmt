@@ -1,0 +1,133 @@
+/**index.wxss**/
+.index_menu {
+  width: 100%;
+  height: 182rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.index_menu>view {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+.index_menu image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 20rpx;
+}
+
+.company_info_content {
+  padding: 26rpx 52rpx 56rpx;
+  color: #888;
+  text-indent: 52rpx;
+  font-size: 28rpx;
+  line-height: 45rpx;
+}
+.company_img {
+  height: 168rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30rpx 40rpx;
+}
+.company_img>image {
+  width: 163rpx;
+  height: 100%;
+}
+.product_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.product_top>view {
+  display: flex
+}
+.seeMore {
+  margin-right: 54rpx;
+}
+
+.dynamic_up {
+  display: flex;
+  align-items: center;
+  padding: 24rpx 50rpx;
+}
+.dynamic_year {
+  font-weight: bold;
+  color: #666;
+}
+
+.dynamic_content {
+  padding-left: 70rpx;
+}
+.dynamic_li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.dynamic_li_box {
+  border-bottom: 1rpx #eee solid;
+  padding: 30rpx 50rpx 30rpx 0;
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+  line-height: 38rpx;
+  width: 605rpx;
+  box-sizing: border-box;
+}
+.dynamic_time {
+  width: 60rpx;
+  font-size: 24rpx;
+  color: #888;
+  margin-right: 34rpx;
+}
+.dy_left {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+}
+.dy_left>image {
+  width: 100rpx;
+  height: 100rpx;
+}
+.dy_up {
+  font-size: 28rpx;
+  font-weight: bold
+}
+.dynamic_time>text {
+  width: 60rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center
+}
+.dynamic_bottom {
+  margin: 30rpx 90rpx 40rpx;
+}
+.bgGary {
+  background: #eee
+}
+.map {
+  padding: 23rpx;
+}
+.map map {
+  width: 100%;
+  height: 360rpx;
+}
+.company_name {
+  margin: 40rpx 25rpx 35rpx;
+  height: 72rpx;
+  background: #f2f2f2;
+  font-size: 30rpx;
+  line-height: 72rpx;
+  text-indent: 24rpx;
+}
+.company_detail {
+  padding: 0 50rpx;
+  font-size: 28rpx;
+  color: #888;
+  line-height: 45rpx;
+}
+.tel {
+  color: #45bf23
+}

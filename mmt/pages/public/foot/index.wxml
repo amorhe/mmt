@@ -1,0 +1,4 @@
+<view class='index_bottomRight'>
+    <image src='../../../images/open.png' bindtap='openMy'></image>
+</view>
+<view class='index_bottom'>苗木通提供技术支持</view>

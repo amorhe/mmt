@@ -1,0 +1,36 @@
+<view class='container'> 
+  <!-- 轮播 -->
+  <view class='swipe_box'>
+    <swiper class='swiper_div' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="#fff" indicator-active-color="#36c849" circular>
+    <block wx:for="{{imgUrls}}" wx:key='unquie'>
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  </view>
+
+  <view class='company_info_up callWe_top'>
+      <view>
+        <view class='line_green'></view>
+        <view class='company_info_title'>湖南好苗多苗木有限公司</view>
+      </view>
+      <view class='seeMore'></view>
+  </view>
+
+<view>
+  <view class='map'>
+      <map latitude='30.311385' longitude='120.100437' scale='16' subkey='JHVBZ-HV6K6-CE4S5-MON42-MCKPJ-UMBC5' markers='{{markers}}'></map>
+    </view>
+    <view class='company_name'>公司名称：湖南好苗多苗木有限公司</view>
+    <view class='company_detail'>
+      <view>公司地址：湖南省长沙市雨花区迎新路686号7栋401</view>
+      <view>担任职位：董事长大人</view>
+      <view>微信号码：小小</view>
+      <view>QQ号码：18820255000</view>
+      <view>常用邮箱：18820255000</view>
+      <view>联系电话：<text class='tel'>18820255000</text></view>
+    </view>
+  </view>
+  <foot></foot>
+</view>

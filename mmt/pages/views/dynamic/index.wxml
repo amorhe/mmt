@@ -1,0 +1,69 @@
+<view class='container'>
+  <view class='swipe_box marginB'>
+    <swiper class='swiper_div' autoplay>
+      <block wx:for='{{imgArr}}' wx:key='unqie'>
+        <swiper-item>
+          <image class='slide-image' src='{{item}}'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='userziliao'>
+    <text>刘智</text>
+    <view>
+     <image src='https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1588326868,1361758743&fm=26&gp=0.jpg'></image>
+    </view>
+  </view>
+
+  <!-- 列表 -->
+  <view class='listAll'>
+  <view class='dynamic_list' wx:for='{{imageList}}' wx:key='unqie'>
+    <image class='avavtar' src='{{item.avatar}}'></image>
+    <view class='dynamic_box'>
+      <view class='dynamic_box_top'>
+        <text class='username'>{{item.name}}</text>
+        <text class='time'>{{item.time}}</text>
+      </view>
+      <view class='dynamic_text' style='-webkit-line-clamp: {{row}};'>{{item.text}}</view>
+      <view class='dynamic_action' bindtap='openRow' wx:if='{{row==4}}'>
+        <text>全文</text>
+        <text class='sanjiao'></text>
+      </view>
+      <view class='dynamic_action' bindtap='closeRow' wx:if='{{row>4}}'>
+        <text>收起</text>
+        <text class='sanjiaoOut'></text>
+      </view>
+      <view class='image_box'>
+        <image wx:for='{{item.imageUrls}}' wx:key='unqie'  wx:for-item="itemImg" src='{{itemImg}}'></image>
+      </view>
+      <view class='dynamic_bottom'>
+        <text>0次浏览</text>
+        <view class='dynamic_bottom_box'>
+          <view>
+            <image src='/images/icon-ms.png' bindtap='discussClick'></image>
+            <text>30</text>
+          </view>
+          <view>
+            <image src='/images/icon-zan.png' bindtap='dianzan'></image>
+            <text class='colorSpecial'>130</text>
+          </view>
+        </view>
+      </view>
+
+      <view class='discuss_box' wx:if='{{item.discuss}}'>
+        <view>查看更多</view>
+        <view wx:for='{{item.discuss}}' wx:key='unqie' wx:for-item='itemText'>
+          <text class='disName'>{{itemText.name}}：</text>
+          <text>{{itemText.content}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  </view>
+  <foot></foot>
+   <alertView id='alertView'
+               content='{{str}}'
+               bind:cancelEvent='cancelEvent'
+               bind:confirmEvent='confirmEvent'
+    ></alertView>
+</view>

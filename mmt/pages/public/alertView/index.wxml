@@ -1,0 +1,28 @@
+<!-- <view class='container' hidden='{{!isShow}}'>
+  <view class='wx-mask-view'>
+    <view class='wx-alertview'>
+      <view class='wx-alert-title'>{{title}}</view>
+      <view class='wx-alert-content'>{{content}}</view>
+      <image mode='widthFix' class='wx-alert-image' src='/images/discuss_alert.png'></image>
+      <view class='wx-alert-footer'>
+        <view class='wx-alert-btn' catchtap='_cancelEvent'>{{canceText}}</view>
+        <view class='wx-alert-btn' catchtap='_confirmEvent'>{{confirmText}}</view>
+      </view>
+    </view>
+  </view>
+</view> -->
+
+
+<view class='backdrop' hidden='{{!isShow}}'>
+  <view style="display: {{state}}">
+      <view class='closeCircle' catchtap='_cancelEvent' >X</view>
+      <view class='line_white line_asset'></view>
+       <view class='alertBox'>
+          <view class='alert_title'>温馨提示！</view>
+            <view class='alert_content'>{{content}}</view>
+            <button catchtap='_confirmEvent'>开启我的苗店</button>
+    </view>
+  </view>
+</view>
+
+   

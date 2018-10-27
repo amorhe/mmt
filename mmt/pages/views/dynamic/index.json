@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "最近动态",
+  "usingComponents": {
+    "foot": "../../public/foot/index",
+    "alertView": "../../public/alertView/index"
+  }
+}

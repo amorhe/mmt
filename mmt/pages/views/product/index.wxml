@@ -1,0 +1,26 @@
+<view class='container'>
+  <swiper class='swipe_box' indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key='unquie'>
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view>
+  <view class='company_info_up'>
+    <view class='line_green'></view>
+    <view class='company_info_title'>产品展示</view>
+  </view>
+</view>
+<view class='product_list'>
+  <view wx:for='{{productList}}' wx:key='unquie' bindtap='goDetail'>
+    <image src='{{item.src}}'></image>
+    <view class='product_name'>{{item.name}}</view>
+  </view>
+</view> 
+<view class='openFill'>
+  <foot></foot>
+</view>
+</view>

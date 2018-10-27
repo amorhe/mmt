@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "供应详情",
+  "usingComponents": {
+    "foot": "../../public/foot/index",
+    "alertView":"../../public/alertView/index"
+  }
+}

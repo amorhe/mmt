@@ -1,0 +1,15 @@
+.index_bottomRight {
+  margin: 0 30rpx 46rpx;
+  height: 90rpx;
+  text-align: right
+}
+.index_bottomRight>image {
+  width: 120rpx;
+  height: 100%
+}
+.index_bottom {
+  font-size: 22rpx;
+  color: #888;
+  text-align: center;
+  margin-bottom: 40rpx
+}

@@ -1,0 +1,7 @@
+/* pages/views/product/index.wxss */
+.openFill {
+  position: relative;
+  right: 26rpx;
+  bottom: 60rpx;
+  z-index: 100;
+}
